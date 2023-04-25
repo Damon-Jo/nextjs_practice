@@ -1,14 +1,16 @@
 import { connectDB } from "@/util/database";
 import ListItem from "./ListItem";
 
-export const dynamic = 'force-dynamic'; //force-static
+export const revalidate = 20;
+
+
 
 export default async function List() {
 
   const client = await connectDB;
   const db = client.db("forum")
   let result = await db.collection('post').find().toArray()
-  // console.log(result)
+  console.log(result)
 
     return (
       <div className="list-bg">

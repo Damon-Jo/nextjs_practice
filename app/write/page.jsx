@@ -1,24 +1,5 @@
 export default function Write(){
 
-    // let submition = async (e) => {
-    //     e.preventDefault()
-    //     let title = e.target.title.value
-    //     let content = e.target.content.value
-    //     let data = {
-    //         title : title,
-    //         content : content
-    //     }
-    //     let result = await fetch('/api/test', {
-    //         method : 'POST',
-    //         headers : {
-    //             'Content-Type' : 'application/json'
-    //         },
-    //         body : JSON.stringify(data)
-    //     })
-    //     console.log(result)
-    // }
-
-
     return(
         <div className="p-20">
             <h4>Write page</h4>
