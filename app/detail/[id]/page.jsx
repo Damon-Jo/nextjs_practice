@@ -1,5 +1,6 @@
 import { connectDB } from "@/util/database";
 import { ObjectId } from "mongodb";
+import Comment from "./Comment";
 
 export default async function Detail(props){
     const client = await connectDB;
@@ -13,7 +14,9 @@ export default async function Detail(props){
         <div>
             <h4>Detail page</h4>
             <h4>{result.title}</h4>
-            <p>content</p>
+            <p>{result.content}</p>
+            <Comment/>
+
         </div>
     )
 }
